@@ -1,0 +1,44 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Gallery</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <script src="scripts.js" defer></script>
+    <script src="gallery-data.js" defer></script>
+    <script src="gallery.js" defer></script>
+</head>
+
+<body>
+
+    <main class="gallery-page">
+
+        <a href="index.html" class="back-link">
+            ← Back to Gallery
+        </a>
+
+        <h1 id="gallery-title">Gallery</h1>
+
+        <nav class="gallery-subsections" id="gallery-subsections">
+        </nav>
+
+        <div id="gallery-content">
+        </div>
+
+    </main>
+
+    <!-- Full-size image preview -->
+    <div class="image-overlay" id="image-overlay">
+        <button class="close-overlay" id="close-overlay"
+                aria-label="Close image preview">&times;</button>
+
+        <img id="overlay-image" src="" alt="">
+    </div>
+
+</body>
+</html>
