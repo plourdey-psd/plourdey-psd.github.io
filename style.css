@@ -295,19 +295,110 @@ header.scrolled .brand-logo img {
         display: flex;
     }
 
-    header .mobile-menu a {
-        display: block;
-        padding: 14px 20px;
-        color: white;
-        font-family: Georgia, 'Times New Roman', serif;
-        font-size: 16px;
-        text-decoration: none;
-    }
+header .mobile-menu > a {
+    display: block;
+    padding: 10px 20px;
 
-    header .mobile-menu a:hover {
-        background: #252525;
-        color: lightblue;
-    }
+    color: white;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 16px;
+    font-weight: 900;
+    text-transform: uppercase;
+    text-decoration: none;
+
+    transition: color 0.2s ease;
+}
+
+/* Hover effect */
+header .mobile-menu > a:hover {
+    background: #252525;
+    color: lightblue;
+}
+/* Mobile Socials button */
+.mobile-menu .socials-toggle {
+    display: block;
+    width: 100%;
+    padding: 10px 20px;
+
+    background: transparent;
+    border: none;
+    color: white;
+
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 16px;
+    font-weight: 900;
+    text-transform: uppercase;
+    text-align: left;
+
+    cursor: pointer;
+    transition: color 0.2s ease;
+}
+
+.mobile-menu .socials-toggle:hover {
+    background: #252525;
+    color: lightblue;
+}
+
+/* Social links container */
+.mobile-menu .dropdown-content {
+    display: none;
+    position: absolute;
+    top: 0;
+    right: 100%;
+
+    min-width: 150px;
+    padding: 0;
+
+    background: #080808;
+    box-shadow: 0 5px 12px rgba(0, 0, 0, 0.35);
+}
+
+/* Show links to the LEFT of the mobile menu */
+.mobile-menu .dropdown-content.open {
+    display: block;
+}
+
+/* Individual social links */
+.mobile-menu .dropdown-content a {
+    display: block;
+    padding: 14px 20px;
+
+    color: white;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 16px;
+    font-weight: 900;
+    text-transform: uppercase;
+    text-decoration: none;
+    white-space: nowrap;
+}
+
+.mobile-menu .dropdown-content a:hover {
+    background: #252525;
+    color: lightblue;
+}
+/* Social link hover */
+.mobile-menu .dropdown-content a:hover {
+    background: #252525;
+    color: lightblue;
+}
+
+/* Mobile socials dropdown */
+.mobile-menu .dropdown-content {
+    display: none;
+    position: static;
+    box-shadow: none;
+    background: transparent;
+    margin-left: 10px;
+    text-align: left;
+}
+
+
+
+.mobile-menu .dropdown-content a {
+    color: white;
+    display: block;
+    padding: 10px;
+}
 
     /* Keep page content from sitting under the header */
     .portfolio {

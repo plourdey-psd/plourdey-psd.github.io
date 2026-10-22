@@ -11,6 +11,17 @@ fetch("./header.html")
     .then(data => {
         document.body.insertAdjacentHTML("afterbegin", data);
 
+        const socialsButton = document.querySelector(".socials-toggle");
+
+        if (socialsButton) {
+            socialsButton.addEventListener("click", () => {
+                const socialsLinks = socialsButton.nextElementSibling;
+                const isOpen = socialsLinks.classList.toggle("open");
+
+                socialsButton.setAttribute("aria-expanded", isOpen);
+            });
+}
+
         const header = document.querySelector("header");
         const menuToggle = header.querySelector(".menu-toggle");
         const mobileMenu = header.querySelector(".mobile-menu");
