@@ -737,6 +737,16 @@ footer nav {
     margin: 0 250px 0 250px;
 }
 
+@media (max-width: 800px) {
+    #project-category,
+    #project-description {
+        text-align: center;
+        color: white;
+        font-size: 16px;
+        margin: 0 25px 0 25px;
+    } 
+}
+
 #project-description {
     margin-bottom: 45px;
 }
