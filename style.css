@@ -611,10 +611,10 @@ footer nav {
     position: absolute;
     top: 20px;
     right: 30px;
-    font-size: 42px;
-    color: white;
     background: none;
     border: none;
+    color: white;
+    font-size: 42px;
     cursor: pointer;
 }
 

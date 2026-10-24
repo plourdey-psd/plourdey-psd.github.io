@@ -97,7 +97,7 @@ document.querySelectorAll(".carousel-track img").forEach((img) => {
 
         // Create image overlay
         const overlay = document.createElement("div");
-        overlay.className = "image-overlay";
+        overlay.className = "image-overlay active";
 
         const largeImage = document.createElement("img");
         largeImage.src = img.src;

@@ -1,3 +1,4 @@
+
 <!-- Homepage -->
 
 <!DOCTYPE html>
@@ -6,6 +7,7 @@
     <head>
         <link rel="Stylesheet" href="style.css">
         <script src="scripts.js" defer></script>
+        <script src="https://forminit.com/sdk/v1/forminit.js"></script>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="icon" type="image/png" href="images/logo.png">
     </head>
@@ -17,21 +19,15 @@
             Have a project in mind? Fill out the form below and let's talk.
         </p>
 
-        <form class="contact-form" action="https://formspree.io/f/mpppwaly" method="POST"
+        <form class="contact-form" action="https://forminit.com/f/lgqpfqgexux" method="POST"
             enctype="multipart/form-data">
-
-                <input
-                    type="hidden"
-                    name="_next"
-                    value="https://plourdey-psd.github.io/thank-you-page.html"
-                >
 
             <div class="form-group">
                 <label for="name">Full Name</label>
                 <input
                     type="text"
                     id="name"
-                    name="name"
+                    name="fi-sender-fullName"
                     placeholder="Your name"
                     required
                 >
@@ -42,8 +38,8 @@
                 <input
                     type="email"
                     id="email"
-                    name="email"
-                    placeholder="you@example.com"
+                    name="fi-sender-email"
+                    placeholder="placeholder@gmail.com"
                     required
                 >
             </div>
@@ -53,7 +49,7 @@
                 <input
                     type="file"
                     id="photo"
-                    name="photo"
+                    name="fi-file-photo"
                     accept="image/*"
                 >
                 <small>Upload a reference image for your project.</small>
@@ -63,7 +59,7 @@
                 <label for="message">Additional Information</label>
                 <textarea
                     id="message"
-                    name="message"
+                    name="fi-text-message"
                     rows="6"
                     placeholder="Tell me about your project..."
                     required
