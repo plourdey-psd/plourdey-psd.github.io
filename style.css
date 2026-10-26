@@ -414,6 +414,13 @@ footer nav {
     gap: 40px;
 }
 
+footer p {
+    display: flex;
+    text-align: center;
+    color: white;
+    font-size: 15px;
+}
+
 .footer-style {
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-weight: 900;
